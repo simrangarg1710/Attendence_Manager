@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attendance Manager</title>
+    <link rel="stylesheet" type="text/css" href="/css/attendance.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&family=Proza+Libre:ital@1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <body>
+    <!-- <img  src="/css/tff_logo.jpg" > -->
+      <div class="main" >
+        <form action="/submit" class="text-center border border-light form" method="POST">
+          <p class="mb-4">Attendance</p>
+          <ol>
+            <li class="member">
+            Aakash Sharma
+              <div class="labels">
+              <label for="present" class="present" >Present</label>
+              <input id="present"  type="radio" name="aakash" value="Present" />
+              <label for="absent" class="absent" >Absent</label>
+              <input id="absent"  type="radio" name="aakash" value="Absent" />
+              </div>
+            </li>
+            <li class="member">
+              Aarushi
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="aarushi" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="aarushi" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Aaryaman Thakur
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="aaryaman" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="aaryaman" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Aarzoo Sharma
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="aarzoo" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="aarzoo" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Aastha Singhal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="aastha" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="aastha" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Aayushi Chaudhary
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="aayushi" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="aayushi" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Abhay Goyal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="abhay_goyal" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="abhay_goyal" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Abhay Singh
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="abhay_singh" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="abhay_singh" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Abhinav Sinha
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="abhinav" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="abhinav" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Abhishek Sharma
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="abhishek" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="abhishek" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Aditi Baranwal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="aditi_baranwal" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="aditi_baranwal" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Aditi Puri
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="aditi_puri" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="aditi_puri" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Aditya Goel
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="aditya" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="aditya" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Akhil Gupta
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="akhil" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="akhil" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Akshay Khandelwal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="akshay" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="akshay" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Akshita Sharma
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="akshita" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="akshita" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Amol Vyas
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="amol" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="amol" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Ana Sharma
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="ana" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="ana" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Ananti 
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="ananti" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="ananti" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Anika Shukla
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="anika" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="anika" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Anmol Arora
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="anmol_arora" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="anmol_arora" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Anmol Gupta
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="anmol_gupta" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="anmol_gupta" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Anubhav Goyal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="anubhav" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="anubhav" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Anupama
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="anupama" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="anupama" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Anushka Aggarwal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="anushka_aggarwal" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="anushka_aggarwal" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Anushka Chandra
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="anushka_chandra" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="anushka_chandra" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Anushka_khera
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="anushka_khera" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="anushka_khera" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Anvi Chopra
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="anvi" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="anvi" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Arnav Mishra
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="arnav" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="arnav" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Arpanjti Singh Malhi
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="arpanjit" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="arpanjit" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Arpit Malik
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="arpit" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="arpit" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Aryan Lamba
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="aryan" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="aryan" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Ayaan Ahmed Khan
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="ayaan" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="ayaan" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Ayush Chandra
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="ayush_chandra" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="ayush_chandra" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Ayush Kulshrestha
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="ayush_kulshrestha" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="ayush_kulshrestha" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Barleen Kaur
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="barleen" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="barleen" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Bhavya Satija
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="bhavya" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="bhavya" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Bhomik Singh
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="bhomik" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="bhomik" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Bhushan Bhagchandani
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name= "bhushan" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="bhushan" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Chinmay Paliwal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="chinmay" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="chinmay" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Chiranjeev
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="chiranjeev" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="chiranjeev" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Devansh Garg
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="devansh" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="devansh" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Dhruv Sharma
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="dhruv" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="dhruv" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Divit Jain
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="divit" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="divit" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Garv Bareja
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="garv" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="garv" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Gauravi Rajwanshi
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="gauravi" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="gauravi" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Gunish Kumar
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="gunish" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="gunish" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Hargun Singh Logani
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="hargun" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="hargun" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Ishita Thakur
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="ishita" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="ishita" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Jappreet Kaur
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="jappreet" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="jappreet" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Jaskarandeep Saini
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="jaskarandeep" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="jaskarandeep" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Jaskirat Singh
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="jaskirat" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="jaskirat" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Jasmeen Kaur
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="jasmeen" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="jasmeen" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Kaavya Verma
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="kaavya" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="kaavya" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Kartik Arora
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="kartik_arora" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="kartik_arora" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Kartik Gupta
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="kartik_gupta" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="kartik_gupta" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Kashish Goyal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="kashish" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="kashish" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Kavitash
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="kavitash" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="kavitash" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Khushal Garg
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="khushal" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="khushal" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Kritika Nanda
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="kritika" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="kritika" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Kuber Mehra
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="kuber" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="kuber" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Kushal Saini
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="kushal" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="kushal" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Madhav Pande
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="madhav" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="madhav" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Mahek Khowala
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="mahek" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="mahek" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Mahin Garg
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="mahin" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="mahin" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Manan Munjal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="manan_munjal" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="manan_munjal" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Manan Negi
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="manan_negi" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="manan_negi" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Mandeep Goyal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="mandeep" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="mandeep" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Mayukh Sharma
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="mayukh" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="mayukh" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Mehak Sharma
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="mehak" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="mehak" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Mukund Gupta
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="mukund" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="mukund" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Nikheel Jain
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="nikheel" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="nikheel" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Nikhil Singla
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="nikhil" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="nikhil" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Nikita
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="nikita" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="nikita" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Nimish Shangle
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="nimish" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="nimish" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Nishchay Jain
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="nishchay" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="nishchay" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Oshita Singh
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="oshita" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="oshita" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Palak Bahl
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="palak" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="palak" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Paras Maini
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="paras" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="paras" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Payas Jain
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="payas" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="payas" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Prachi Mangewala
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="prachi_mangewala" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="prachi_mangewala" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Prachi Singhroha
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="prachi_singhroha" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="prachi_singhroha" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Preetinder Singh Bajaj
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="preetinder" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="preetinder" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Pulkit Kohli
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="pulkit" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="pulkit" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Raghav Goel
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="raghav_goel" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="raghav_goel" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Raghav Virmani
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="raghav_virmani" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="raghav_virmani" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Rahul Mishra
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="rahul" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="rahul" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Rajbir Singh Kaura
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="rajbir" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="rabjir" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Risham Arora
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="risham" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="risham" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Ritham
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="ritham" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="ritham" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Rohit Upreti
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="rohit" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="rohit" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Ruhi Goyal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="ruhi" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="ruhi" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Rushil Mittal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="rushil" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="rushil" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Saatvik Garg
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="saatvik" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="saatvik" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Sahil 
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="sahil" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="sahil" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Saloni Bali
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="saloni" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="saloni" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Sanchit Goyal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="sanchit" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="sanchit" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Sankalp Sharma
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="sankalp" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="sankalp" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Shantanu Dev
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="shantanu" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="shantanu" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Shivani Sharma
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="shivani" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="shivani" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Shourya Gupta
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="shourya" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="shourya" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Shrey Gupta
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="shrey" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="shrey" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Shreya Gupta
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="shreya" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="shreya" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Shreyas Dubey
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="shreyas" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="shreyas" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Shruti
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="shruti" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="shruti" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Shruti Singh
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="shruti_singh" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="shruti_singh" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Shubham Khanna
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="shubham_khanna" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="shubham_khanna" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Shubham Sahni
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="shubham_sahni" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="shubham_sahni" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Siddhant Jain
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="siddhant" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="siddhant" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Simranjeet Kaur
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="simranjeet" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="simranjeet" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Soomo Jyoti Banerjee
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="soomo" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="soomo" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Sparsh Gulati 
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="sparsh" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="sparsh" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Tanmay Chakravorty
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="tanmay" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="tanmay" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Tarandeep Kaur
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="tarandeep" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="tarandeep" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Tushar Goyal
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="tushar" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="tushar" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Twinkle
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="twinkle" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="twinkle" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Udbhav Somani
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="udbhav" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="udbhav" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Vaishnav Gautam
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="vaishnav" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="vaishnav" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Vasundhra Datt
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="vasundhra" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="vasundhra" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Vatsal Soni
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="vatsal" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="vatsal" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Vinnet Upadhyay
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="vineet" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="vineet" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Yash Dhawan
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="yash_dhawan" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="yash_dhawan" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Yash Kapur
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="yash_kapur" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="yash_kapur" value="Absent" />
+                </div>
+            </li>
+            
+            <li class="member">
+              Yashi Mishra
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="yashi" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="yashi" value="Absent" />
+                </div>
+            </li>
+            <li class="member">
+              Yuvraj Singh
+                <div class="labels">
+                <label for="present" class="present" >Present</label>
+                <input id="present"  type="radio" name="yuvraj" value="Present" />
+                <label for="absent" class="absent" >Absent</label>
+                <input id="absent"  type="radio" name="yuvraj" value="Absent" />
+                </div>
+            </li>
+          </ol>
+          <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Submit</button>
+        </form>
+        
+        <a type="button" class="btn btn-outline-danger" href="/edit">Edit</a>
+        <a type="button" class="btn btn-outline-success" href="/view">View Attendance</a>
+       
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    </body>
+    </html>

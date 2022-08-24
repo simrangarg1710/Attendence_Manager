@@ -1,0 +1,38 @@
+
+body{
+	padding: 0;
+	margin: 0;
+    background-image: linear-gradient(to right top, #8E2DE2, #4A00E0);
+}
+ol{
+	text-align: left;
+    display: inline;
+    color: white;
+    font-family: 'Lato', sans-serif;
+	
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+.heading{
+    color: white;
+    font-family: 'Proza Libre', sans-serif;
+}
+.Date{
+    background-color: white ;
+    padding: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    display: inline-block;
+    width: 100%;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

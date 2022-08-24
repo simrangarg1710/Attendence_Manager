@@ -1,0 +1,83 @@
+*{
+	margin: 0px;
+	padding: 0px;;
+}
+html, body {
+	height: 100%;
+	 
+ } 
+ .main{
+	background-color: #ffffff;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+	width: 560px;
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+	
+}
+
+body{
+	/* background-image: linear-gradient(to right top, #5433FF, #20BDFF, #A5FECB);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat; */
+	background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+    background-size: 600% 600%;
+    -webkit-animation: Background 25s ease infinite;
+    -moz-animation: Background 25s ease infinite;
+    animation: Background 25s ease infinite;
+
+}
+ol{
+	text-align: left;
+	list-style-type: disc;
+	display: inline;
+	font-family: 'Lato', sans-serif;
+
+}
+li {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+a{
+	margin-left: 10px;
+	margin-bottom: 20px;
+	margin-top: -10px;
+}
+img{
+	width: 200px;
+	height: 200px;
+	background-attachment: fixed;
+	background-position: center; 
+	margin: auto;
+}
+p{
+	font-size: 2.0rem;
+	font-family: 'Proza Libre', sans-serif;
+}
+form{
+	padding: 48px;
+}
+@media screen and (max-width:900px){
+	.main{
+		width: 80%;
+		
+	}
+	form{
+		padding: 40px;
+	}
+	
+}
+@media screen and (max-width:500px){
+	.main{
+		width: 100%;
+		
+	}
+	form{
+		padding: 25px;
+	}
+	
+}

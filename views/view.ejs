@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attendance Manager</title>
+    <link rel="stylesheet" type="text/css" href="/css/view.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- comment -->
+    <%var total_AakashSharma =0,total_Aarushi =0, total_AaryamanThakur =0, total_AarzooSharma =0, 
+total_AasthaSinghal =0, 
+total_AayushiChaudhry =0, 
+total_AbhayGoyal =0, 
+total_Abhaysingh =0, 
+total_AbhinavSinha =0, 
+total_AbhishekSharma =0, 
+total_AditiBaranwal =0, 
+total_AditiPuri =0, 
+total_AdityaGoel =0, 
+total_Akhilgupta =0, 
+total_AkshayKhandelwal =0, 
+total_AkshitaSharma =0, 
+total_AmolVyas =0, 
+total_AnaSharma =0, 
+total_Ananti =0, 
+total_AnikaShukla =0, 
+total_AnmolArora =0, 
+total_AnmolGupta =0, 
+total_AnubhavGoyal =0, 
+total_Anupama =0, 
+total_AnushkaAggarwal =0, 
+total_AnushkaChandra =0, 
+total_AnushkaKhera =0, 
+total_AnviChopra =0, 
+total_ArnavMishra =0, 
+total_ArpanjitSinghMalhi =0, 
+total_ArpitMalik =0, 
+total_AryanLamba =0, 
+total_AyaanAhmedKhan =0, 
+total_AyushChandra =0, 
+total_AyushKulshrestha =0, 
+total_Barleenkaur =0, 
+total_BhavyaSatija =0, 
+total_BhomikSingh =0, 
+total_BhushanBhagchandani =0, 
+total_ChinmayPaliwal =0, 
+total_Chiranjeev =0, 
+total_DevanshGarg =0, 
+total_Dhruvsharma =0, 
+total_DivitJain =0, 
+total_GarvBareja =0, 
+total_GauraviRajwanshi =0, 
+total_Gunishkumar =0, 
+total_HargunSinghLogani =0, 
+total_Ishitathakur =0, 
+total_JappreetKaur =0, 
+total_JaskarandeepSaini =0, 
+total_Jaskiratsingh =0, 
+total_Jasmeenkaur =0, 
+total_KaavyaVerma =0, 
+total_kartikarora =0, 
+total_KartikGupta =0, 
+total_KashishGoyal =0, 
+total_Kavitash =0, 
+total_KhushalGarg =0, 
+total_KritikaNanda =0, 
+total_KuberMehra =0, 
+total_KushalSahni =0, 
+total_MadhavPande =0, 
+total_MahekKhowala =0, 
+total_MahinGarg =0, 
+total_MananMunjal =0, 
+total_MananNegi =0, 
+total_MandeepGoyal =0, 
+total_MayukhSharma =0, 
+total_MehakSharma =0, 
+total_MukundGupta =0, 
+total_NikheelJain =0, 
+total_NikhilSingla =0, 
+total_Nikita =0, 
+total_Nimishshangle =0, 
+total_NishchayJain =0, 
+total_OshitaSingh =0, 
+total_PalakBahl =0, 
+total_ParasMaini =0, 
+total_PayasJain =0, 
+total_PrachiMangewala =0, 
+total_PrachiSinghroha =0, 
+total_Preetindersinghbajaj =0, 
+total_Pulkitkohli =0, 
+total_Raghavgoel =0, 
+total_RaghavVirmani =0, 
+total_RahulMishra =0, 
+total_RAJBIRSINGHKAURA =0, 
+total_RishamArora =0, 
+total_Ritham =0, 
+total_RohitUpreti =0, 
+total_RuhiGoyal =0, 
+total_RushilMittal =0, 
+total_Saatvikgarg =0, 
+total_Sahil =0, 
+total_SaloniBali =0, 
+total_SanchitGoyal =0, 
+total_SankalpSharma =0, 
+total_ShantanuDev =0, 
+total_ShivaniSharma =0, 
+total_ShouryaGupta =0, 
+total_ShreyGupta =0, 
+total_ShreyaGupta =0, 
+total_ShreyasDubey =0, 
+total_Shruti =0, 
+total_ShrutiSingh =0, 
+total_Shubhamkhanna =0, 
+total_ShubhamSahni =0, 
+total_SiddhantJain =0, 
+total_SimranjeetKaur =0, 
+total_SoomoJyotibanerjee =0, 
+total_Sparshgulati =0, 
+total_TanmayChakravorty =0, 
+total_Tarandeepkour =0, 
+total_Tushargoyal =0, 
+total_Twinkle =0, 
+total_UdbhavSomani =0, 
+total_Vaishnavgautam =0, 
+total_VasundhraDatt =0, 
+total_Vatsalsoni =0, 
+total_VineetUpadhyay =0, 
+total_YashDhawan =0, 
+total_YashKapur =0, 
+total_YashiMishra =0, 
+total_YuvrajSingh =0,
+total_meetings=0%>
+    <% for( var meeting of attendance ) { %> <% if(meeting.AakashSharma=="Present"){ %><%total_AakashSharma= total_AakashSharma+1  %> <%}%>
+    <% if(meeting.Aarushi=="Present"){ %><%total_Aarushi= total_Aarushi+1  %> <%}%>
+    <% if(meeting.AaryamanThakur=="Present"){ %><%total_AaryamanThakur= total_AaryamanThakur+1  %> <%}%>
+    <% if(meeting.AarzooSharma=="Present"){ %><%total_AarzooSharma= total_AarzooSharma+1  %> <%}%>
+    <% if(meeting.AasthaSinghal=="Present"){ %><%total_AasthaSinghal= total_AasthaSinghal+1  %> <%}%>
+    <% if(meeting.AayushiChaudhry=="Present"){ %><%total_AayushiChaudhry= total_AayushiChaudhry+1  %> <%}%>
+    <% if(meeting.AbhayGoyal=="Present"){ %><%total_AbhayGoyal= total_AbhayGoyal+1  %> <%}%>
+    <% if(meeting.Abhaysingh=="Present"){ %><%total_Abhaysingh= total_Abhaysingh+1  %> <%}%>
+    <% if(meeting.AbhinavSinha=="Present"){ %><%total_AbhinavSinha= total_AbhinavSinha+1  %> <%}%>
+    <% if(meeting.AbhishekSharma=="Present"){ %><%total_AbhishekSharma= total_AbhishekSharma+1  %> <%}%>
+    <% if(meeting.AditiBaranwal=="Present"){ %><%total_AditiBaranwal= total_AditiBaranwal+1  %> <%}%>
+    <% if(meeting.AditiPuri=="Present"){ %><%total_AditiPuri= total_AditiPuri+1  %> <%}%>
+    <% if(meeting.AdityaGoel=="Present"){ %><%total_AdityaGoel= total_AdityaGoel+1  %> <%}%>
+    <% if(meeting.Akhilgupta=="Present"){ %><%total_Akhilgupta= total_Akhilgupta+1  %> <%}%>
+    <% if(meeting.AkshayKhandelwal=="Present"){ %><%total_AkshayKhandelwal= total_AkshayKhandelwal+1  %> <%}%>
+    <% if(meeting.AkshitaSharma=="Present"){ %><%total_AkshitaSharma= total_AkshitaSharma+1  %> <%}%>
+    <% if(meeting.AmolVyas=="Present"){ %><%total_AmolVyas= total_AmolVyas+1  %> <%}%>
+    <% if(meeting.AnaSharma=="Present"){ %><%total_AnaSharma= total_AnaSharma+1  %> <%}%>
+    <% if(meeting.Ananti=="Present"){ %><%total_Ananti= total_Ananti+1  %> <%}%>
+    <% if(meeting.AnikaShukla=="Present"){ %><%total_AnikaShukla= total_AnikaShukla+1  %> <%}%>
+    <% if(meeting.AnmolArora=="Present"){ %><%total_AnmolArora= total_AnmolArora+1  %> <%}%>
+    <% if(meeting.AnmolGupta=="Present"){ %><%total_AnmolGupta= total_AnmolGupta+1  %> <%}%>
+    <% if(meeting.AnubhavGoyal=="Present"){ %><%total_AnubhavGoyal= total_AnubhavGoyal+1  %> <%}%>
+    <% if(meeting.Anupama=="Present"){ %><%total_Anupama= total_Anupama+1  %> <%}%>
+    <% if(meeting.AnushkaAggarwal=="Present"){ %><%total_AnushkaAggarwal= total_AnushkaAggarwal+1  %> <%}%>
+    <% if(meeting.AnushkaChandra=="Present"){ %><%total_AnushkaChandra= total_AnushkaChandra+1  %> <%}%>
+    <% if(meeting.AnushkaKhera=="Present"){ %><%total_AnushkaKhera= total_AnushkaKhera+1  %> <%}%>
+    <% if(meeting.AnviChopra=="Present"){ %><%total_AnviChopra= total_AnviChopra+1  %> <%}%>
+    <% if(meeting.ArnavMishra=="Present"){ %><%total_ArnavMishra= total_ArnavMishra+1  %> <%}%>
+    <% if(meeting.ArpanjitSinghMalhi=="Present"){ %><%total_ArpanjitSinghMalhi= total_ArpanjitSinghMalhi+1  %> <%}%>
+    <% if(meeting.ArpitMalik=="Present"){ %><%total_ArpitMalik= total_ArpitMalik+1  %> <%}%>
+    <% if(meeting.AryanLamba=="Present"){ %><%total_AryanLamba= total_AryanLamba+1  %> <%}%>
+    <% if(meeting.AyaanAhmedKhan=="Present"){ %><%total_AyaanAhmedKhan= total_AyaanAhmedKhan+1  %> <%}%>
+    <% if(meeting.AyushChandra=="Present"){ %><%total_AyushChandra= total_AyushChandra+1  %> <%}%>
+    <% if(meeting.AyushKulshrestha=="Present"){ %><%total_AyushKulshrestha= total_AyushKulshrestha+1  %> <%}%>
+    <% if(meeting.Barleenkaur=="Present"){ %><%total_Barleenkaur= total_Barleenkaur+1  %> <%}%>
+    <% if(meeting.BhavyaSatija=="Present"){ %><%total_BhavyaSatija= total_BhavyaSatija+1  %> <%}%>
+    <% if(meeting.BhomikSingh=="Present"){ %><%total_BhomikSingh= total_BhomikSingh+1  %> <%}%>
+    <% if(meeting.BhushanBhagchandani=="Present"){ %><%total_BhushanBhagchandani= total_BhushanBhagchandani+1  %> <%}%>
+    <% if(meeting.ChinmayPaliwal=="Present"){ %><%total_ChinmayPaliwal= total_ChinmayPaliwal+1  %> <%}%>
+    <% if(meeting.Chiranjeev=="Present"){ %><%total_Chiranjeev= total_Chiranjeev+1  %> <%}%>
+    <% if(meeting.DevanshGarg=="Present"){ %><%total_DevanshGarg= total_DevanshGarg+1  %> <%}%>
+    <% if(meeting.Dhruvsharma=="Present"){ %><%total_Dhruvsharma= total_Dhruvsharma+1  %> <%}%>
+    <% if(meeting.DivitJain=="Present"){ %><%total_DivitJain= total_DivitJain+1  %> <%}%>
+    <% if(meeting.GarvBareja=="Present"){ %><%total_GarvBareja= total_GarvBareja+1  %> <%}%>
+    <% if(meeting.GauraviRajwanshi=="Present"){ %><%total_GauraviRajwanshi= total_GauraviRajwanshi+1  %> <%}%>
+    <% if(meeting.Gunishkumar=="Present"){ %><%total_Gunishkumar= total_Gunishkumar+1  %> <%}%>
+    <% if(meeting.HargunSinghLogani=="Present"){ %><%total_HargunSinghLogani= total_HargunSinghLogani+1  %> <%}%>
+    <% if(meeting.Ishitathakur=="Present"){ %><%total_Ishitathakur= total_Ishitathakur+1  %> <%}%>
+    <% if(meeting.JappreetKaur=="Present"){ %><%total_JappreetKaur= total_JappreetKaur+1  %> <%}%>
+    <% if(meeting.JaskarandeepSaini=="Present"){ %><%total_JaskarandeepSaini= total_JaskarandeepSaini+1  %> <%}%>
+    <% if(meeting.Jaskiratsingh=="Present"){ %><%total_Jaskiratsingh= total_Jaskiratsingh+1  %> <%}%>
+    <% if(meeting.Jasmeenkaur=="Present"){ %><%total_Jasmeenkaur= total_Jasmeenkaur+1  %> <%}%>
+    <% if(meeting.KaavyaVerma=="Present"){ %><%total_KaavyaVerma= total_KaavyaVerma+1  %> <%}%>
+    <% if(meeting.kartikarora=="Present"){ %><%total_kartikarora= total_kartikarora+1  %> <%}%>
+    <% if(meeting.KartikGupta=="Present"){ %><%total_KartikGupta= total_KartikGupta+1  %> <%}%>
+    <% if(meeting.KashishGoyal=="Present"){ %><%total_KashishGoyal= total_KashishGoyal+1  %> <%}%>
+    <% if(meeting.Kavitash=="Present"){ %><%total_Kavitash= total_Kavitash+1  %> <%}%>
+    <% if(meeting.KhushalGarg=="Present"){ %><%total_KhushalGarg= total_KhushalGarg+1  %> <%}%>
+    <% if(meeting.KritikaNanda=="Present"){ %><%total_KritikaNanda= total_KritikaNanda+1  %> <%}%>
+    <% if(meeting.KuberMehra=="Present"){ %><%total_KuberMehra= total_KuberMehra+1  %> <%}%>
+    <% if(meeting.KushalSahni=="Present"){ %><%total_KushalSahni= total_KushalSahni+1  %> <%}%>
+    <% if(meeting.MadhavPande=="Present"){ %><%total_MadhavPande= total_MadhavPande+1  %> <%}%>
+    <% if(meeting.MahekKhowala=="Present"){ %><%total_MahekKhowala= total_MahekKhowala+1  %> <%}%>
+    <% if(meeting.MahinGarg=="Present"){ %><%total_MahinGarg= total_MahinGarg+1  %> <%}%>
+    <% if(meeting.MananMunjal=="Present"){ %><%total_MananMunjal= total_MananMunjal+1  %> <%}%>
+    <% if(meeting.MananNegi=="Present"){ %><%total_MananNegi= total_MananNegi+1  %> <%}%>
+    <% if(meeting.MandeepGoyal=="Present"){ %><%total_MandeepGoyal= total_MandeepGoyal+1  %> <%}%>
+    <% if(meeting.MayukhSharma=="Present"){ %><%total_MayukhSharma= total_MayukhSharma+1  %> <%}%>
+    <% if(meeting.MehakSharma=="Present"){ %><%total_MehakSharma= total_MehakSharma+1  %> <%}%>
+    <% if(meeting.MukundGupta=="Present"){ %><%total_MukundGupta= total_MukundGupta+1  %> <%}%>
+    <% if(meeting.NikheelJain=="Present"){ %><%total_NikheelJain= total_NikheelJain+1  %> <%}%>
+    <% if(meeting.NikhilSingla=="Present"){ %><%total_NikhilSingla= total_NikhilSingla+1  %> <%}%>
+    <% if(meeting.Nikita=="Present"){ %><%total_Nikita= total_Nikita+1  %> <%}%>
+    <% if(meeting.Nimishshangle=="Present"){ %><%total_Nimishshangle= total_Nimishshangle+1  %> <%}%>
+    <% if(meeting.NishchayJain=="Present"){ %><%total_NishchayJain= total_NishchayJain+1  %> <%}%>
+    <% if(meeting.OshitaSingh=="Present"){ %><%total_OshitaSingh= total_OshitaSingh+1  %> <%}%>
+    <% if(meeting.PalakBahl=="Present"){ %><%total_PalakBahl= total_PalakBahl+1  %> <%}%>
+    <% if(meeting.ParasMaini=="Present"){ %><%total_ParasMaini= total_ParasMaini+1  %> <%}%>
+    <% if(meeting.PayasJain=="Present"){ %><%total_PayasJain= total_PayasJain+1  %> <%}%>
+    <% if(meeting.PrachiMangewala=="Present"){ %><%total_PrachiMangewala= total_PrachiMangewala+1  %> <%}%>
+    <% if(meeting.PrachiSinghroha=="Present"){ %><%total_PrachiSinghroha= total_PrachiSinghroha+1  %> <%}%>
+    <% if(meeting.Preetindersinghbajaj=="Present"){ %><%total_Preetindersinghbajaj= total_Preetindersinghbajaj+1  %> <%}%>
+    <% if(meeting.Pulkitkohli=="Present"){ %><%total_Pulkitkohli= total_Pulkitkohli+1  %> <%}%>
+    <% if(meeting.Raghavgoel=="Present"){ %><%total_Raghavgoel= total_Raghavgoel+1  %> <%}%>
+    <% if(meeting.RaghavVirmani=="Present"){ %><%total_RaghavVirmani= total_RaghavVirmani+1  %> <%}%>
+    <% if(meeting.RahulMishra=="Present"){ %><%total_RahulMishra= total_RahulMishra+1  %> <%}%>
+    <% if(meeting.RAJBIRSINGHKAURA=="Present"){ %><%total_RAJBIRSINGHKAURA= total_RAJBIRSINGHKAURA+1  %> <%}%>
+    <% if(meeting.RishamArora=="Present"){ %><%total_RishamArora= total_RishamArora+1  %> <%}%>
+    <% if(meeting.Ritham=="Present"){ %><%total_Ritham= total_Ritham+1  %> <%}%>
+    <% if(meeting.RohitUpreti=="Present"){ %><%total_RohitUpreti= total_RohitUpreti+1  %> <%}%>
+    <% if(meeting.RuhiGoyal=="Present"){ %><%total_RuhiGoyal= total_RuhiGoyal+1  %> <%}%>
+    <% if(meeting.RushilMittal=="Present"){ %><%total_RushilMittal= total_RushilMittal+1  %> <%}%>
+    <% if(meeting.Saatvikgarg=="Present"){ %><%total_Saatvikgarg= total_Saatvikgarg+1  %> <%}%>
+    <% if(meeting.Sahil=="Present"){ %><%total_Sahil= total_Sahil+1  %> <%}%>
+    <% if(meeting.SaloniBali=="Present"){ %><%total_SaloniBali= total_SaloniBali+1  %> <%}%>
+    <% if(meeting.SanchitGoyal=="Present"){ %><%total_SanchitGoyal= total_SanchitGoyal+1  %> <%}%>
+    <% if(meeting.SankalpSharma=="Present"){ %><%total_SankalpSharma= total_SankalpSharma+1  %> <%}%>
+    <% if(meeting.ShantanuDev=="Present"){ %><%total_ShantanuDev= total_ShantanuDev+1  %> <%}%>
+    <% if(meeting.ShivaniSharma=="Present"){ %><%total_ShivaniSharma= total_ShivaniSharma+1  %> <%}%>
+    <% if(meeting.ShouryaGupta=="Present"){ %><%total_ShouryaGupta= total_ShouryaGupta+1  %> <%}%>
+    <% if(meeting.ShreyGupta=="Present"){ %><%total_ShreyGupta= total_ShreyGupta+1  %> <%}%>
+    <% if(meeting.ShreyaGupta=="Present"){ %><%total_ShreyaGupta= total_ShreyaGupta+1  %> <%}%>
+    <% if(meeting.ShreyasDubey=="Present"){ %><%total_ShreyasDubey= total_ShreyasDubey+1  %> <%}%>
+    <% if(meeting.Shruti=="Present"){ %><%total_Shruti= total_Shruti+1  %> <%}%>
+    <% if(meeting.ShrutiSingh=="Present"){ %><%total_ShrutiSingh= total_ShrutiSingh+1  %> <%}%>
+    <% if(meeting.Shubhamkhanna=="Present"){ %><%total_Shubhamkhanna= total_Shubhamkhanna+1  %> <%}%>
+    <% if(meeting.ShubhamSahni=="Present"){ %><%total_ShubhamSahni= total_ShubhamSahni+1  %> <%}%>
+    <% if(meeting.SiddhantJain=="Present"){ %><%total_SiddhantJain= total_SiddhantJain+1  %> <%}%>
+    <% if(meeting.SimranjeetKaur=="Present"){ %><%total_SimranjeetKaur= total_SimranjeetKaur+1  %> <%}%>
+    <% if(meeting.SoomoJyotibanerjee=="Present"){ %><%total_SoomoJyotibanerjee= total_SoomoJyotibanerjee+1  %> <%}%>
+    <% if(meeting.Sparshgulati=="Present"){ %><%total_Sparshgulati= total_Sparshgulati+1  %> <%}%>
+    <% if(meeting.TanmayChakravorty=="Present"){ %><%total_TanmayChakravorty= total_TanmayChakravorty+1  %> <%}%>
+    <% if(meeting.Tarandeepkour=="Present"){ %><%total_Tarandeepkour= total_Tarandeepkour+1  %> <%}%>
+    <% if(meeting.Tushargoyal=="Present"){ %><%total_Tushargoyal= total_Tushargoyal+1  %> <%}%>
+    <% if(meeting.Twinkle=="Present"){ %><%total_Twinkle= total_Twinkle+1  %> <%}%>
+    <% if(meeting.UdbhavSomani=="Present"){ %><%total_UdbhavSomani= total_UdbhavSomani+1  %> <%}%>
+    <% if(meeting.Vaishnavgautam=="Present"){ %><%total_Vaishnavgautam= total_Vaishnavgautam+1  %> <%}%>
+    <% if(meeting.VasundhraDatt=="Present"){ %><%total_VasundhraDatt= total_VasundhraDatt+1  %> <%}%>
+    <% if(meeting.Vatsalsoni=="Present"){ %><%total_Vatsalsoni= total_Vatsalsoni+1  %> <%}%>
+    <% if(meeting.VineetUpadhyay=="Present"){ %><%total_VineetUpadhyay= total_VineetUpadhyay+1  %> <%}%>
+    <% if(meeting.YashDhawan=="Present"){ %><%total_YashDhawan= total_YashDhawan+1  %> <%}%>
+    <% if(meeting.YashKapur=="Present"){ %><%total_YashKapur= total_YashKapur+1  %> <%}%>
+    <% if(meeting.YashiMishra=="Present"){ %><%total_YashiMishra= total_YashiMishra+1  %> <%}%>
+    <% if(meeting.YuvrajSingh=="Present"){ %><%total_YuvrajSingh= total_YuvrajSingh+1  %> <%}%>
+    <% total_meetings = total_meetings+1 %> <%}%>
+      <div  class="main text-center border border-light p-5" >
+        <div id="heading">Total Attendance</div>
+
+        <hr>
+      <!--<h4 style="display: inline;">Total meetings</h4>-->
+      <ol>
+        <li class="member">Aakash Sharma<div class="labels"><% if((total_AakashSharma/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AakashSharma/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AakashSharma/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Aarushi <div class="labels"><% if((total_Aarushi/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Aarushi/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Aarushi/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Aaryaman Thakur<div class="labels"><% if((total_AaryamanThakur/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AaryamanThakur/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AaryamanThakur/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Aarzoo Sharma<div class="labels"><% if((total_AarzooSharma/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AarzooSharma/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AarzooSharma/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Aastha Singhal<div class="labels"><% if((total_AasthaSinghal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AasthaSinghal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AasthaSinghal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Aayushi Chaudhry<div class="labels"><% if((total_AayushiChaudhry/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AayushiChaudhry/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AayushiChaudhry/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Abhay Goyal<div class="labels"><% if((total_AbhayGoyal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AbhayGoyal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AbhayGoyal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Abhay singh<div class="labels"><% if((total_Abhaysingh/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Abhaysingh/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Abhaysingh/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Abhinav Sinha<div class="labels"><% if((total_AbhinavSinha/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AbhinavSinha/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AbhinavSinha/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Abhishek Sharma<div class="labels"><% if((total_AbhishekSharma/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AbhishekSharma/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AbhishekSharma/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Aditi Baranwal<div class="labels"><% if((total_AditiBaranwal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AditiBaranwal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AditiBaranwal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Aditi Puri<div class="labels"><% if((total_AditiPuri/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AditiPuri/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AditiPuri/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Aditya Goel<div class="labels"><% if((total_AdityaGoel/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AdityaGoel/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AdityaGoel/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Akhil gupta<div class="labels"><% if((total_Akhilgupta/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Akhilgupta/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Akhilgupta/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Akshay Khandelwal<div class="labels"><% if((total_AkshayKhandelwal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AkshayKhandelwal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AkshayKhandelwal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Akshita Sharma<div class="labels"><% if((total_AkshitaSharma/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AkshitaSharma/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AkshitaSharma/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Amol Vyas<div class="labels"><% if((total_AmolVyas/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AmolVyas/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AmolVyas/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Ana Sharma<div class="labels"><% if((total_AnaSharma/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AnaSharma/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AnaSharma/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Ananti <div class="labels"><% if((total_Ananti/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Ananti/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Ananti/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Anika Shukla<div class="labels"><% if((total_AnikaShukla/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AnikaShukla/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AnikaShukla/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Anmol Arora<div class="labels"><% if((total_AnmolArora/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AnmolArora/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AnmolArora/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Anmol Gupta<div class="labels"><% if((total_AnmolGupta/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AnmolGupta/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AnmolGupta/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Anubhav Goyal<div class="labels"><% if((total_AnubhavGoyal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AnubhavGoyal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AnubhavGoyal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Anupama <div class="labels"><% if((total_Anupama/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Anupama/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Anupama/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Anushka Aggarwal<div class="labels"><% if((total_AnushkaAggarwal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AnushkaAggarwal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AnushkaAggarwal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Anushka Chandra<div class="labels"><% if((total_AnushkaChandra/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AnushkaChandra/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AnushkaChandra/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Anushka Khera<div class="labels"><% if((total_AnushkaKhera/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AnushkaKhera/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AnushkaKhera/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Anvi Chopra<div class="labels"><% if((total_AnviChopra/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AnviChopra/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AnviChopra/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Arnav Mishra<div class="labels"><% if((total_ArnavMishra/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ArnavMishra/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ArnavMishra/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Arpanjit Singh Malhi<div class="labels"><% if((total_ArpanjitSinghMalhi/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ArpanjitSinghMalhi/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ArpanjitSinghMalhi/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Arpit Malik<div class="labels"><% if((total_ArpitMalik/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ArpitMalik/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ArpitMalik/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Aryan Lamba<div class="labels"><% if((total_AryanLamba/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AryanLamba/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AryanLamba/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Ayaan Ahmed Khan<div class="labels"><% if((total_AyaanAhmedKhan/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AyaanAhmedKhan/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AyaanAhmedKhan/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Ayush Chandra<div class="labels"><% if((total_AyushChandra/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AyushChandra/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AyushChandra/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Ayush Kulshrestha<div class="labels"><% if((total_AyushKulshrestha/total_meetings)*100 > 75){ %><div class="green"><%= ((total_AyushKulshrestha/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_AyushKulshrestha/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Barleen kaur<div class="labels"><% if((total_Barleenkaur/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Barleenkaur/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Barleenkaur/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Bhavya Satija<div class="labels"><% if((total_BhavyaSatija/total_meetings)*100 > 75){ %><div class="green"><%= ((total_BhavyaSatija/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_BhavyaSatija/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Bhomik Singh<div class="labels"><% if((total_BhomikSingh/total_meetings)*100 > 75){ %><div class="green"><%= ((total_BhomikSingh/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_BhomikSingh/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Bhushan Bhagchandani<div class="labels"><% if((total_BhushanBhagchandani/total_meetings)*100 > 75){ %><div class="green"><%= ((total_BhushanBhagchandani/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_BhushanBhagchandani/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Chinmay Paliwal<div class="labels"><% if((total_ChinmayPaliwal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ChinmayPaliwal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ChinmayPaliwal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Chiranjeev <div class="labels"><% if((total_Chiranjeev/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Chiranjeev/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Chiranjeev/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Devansh Garg<div class="labels"><% if((total_DevanshGarg/total_meetings)*100 > 75){ %><div class="green"><%= ((total_DevanshGarg/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_DevanshGarg/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Dhruv sharma<div class="labels"><% if((total_Dhruvsharma/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Dhruvsharma/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Dhruvsharma/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Divit Jain<div class="labels"><% if((total_DivitJain/total_meetings)*100 > 75){ %><div class="green"><%= ((total_DivitJain/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_DivitJain/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Garv Bareja<div class="labels"><% if((total_GarvBareja/total_meetings)*100 > 75){ %><div class="green"><%= ((total_GarvBareja/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_GarvBareja/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Gauravi Rajwanshi<div class="labels"><% if((total_GauraviRajwanshi/total_meetings)*100 > 75){ %><div class="green"><%= ((total_GauraviRajwanshi/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_GauraviRajwanshi/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Gunish kumar<div class="labels"><% if((total_Gunishkumar/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Gunishkumar/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Gunishkumar/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Hargun Singh Logani<div class="labels"><% if((total_HargunSinghLogani/total_meetings)*100 > 75){ %><div class="green"><%= ((total_HargunSinghLogani/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_HargunSinghLogani/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Ishita thakur<div class="labels"><% if((total_Ishitathakur/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Ishitathakur/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Ishitathakur/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Jappreet Kaur<div class="labels"><% if((total_JappreetKaur/total_meetings)*100 > 75){ %><div class="green"><%= ((total_JappreetKaur/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_JappreetKaur/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Jaskarandeep Saini<div class="labels"><% if((total_JaskarandeepSaini/total_meetings)*100 > 75){ %><div class="green"><%= ((total_JaskarandeepSaini/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_JaskarandeepSaini/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Jaskirat singh<div class="labels"><% if((total_Jaskiratsingh/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Jaskiratsingh/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Jaskiratsingh/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Jasmeen kaur<div class="labels"><% if((total_Jasmeenkaur/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Jasmeenkaur/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Jasmeenkaur/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Kaavya Verma<div class="labels"><% if((total_KaavyaVerma/total_meetings)*100 > 75){ %><div class="green"><%= ((total_KaavyaVerma/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_KaavyaVerma/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">kartik arora<div class="labels"><% if((total_kartikarora/total_meetings)*100 > 75){ %><div class="green"><%= ((total_kartikarora/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_kartikarora/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Kartik Gupta<div class="labels"><% if((total_KartikGupta/total_meetings)*100 > 75){ %><div class="green"><%= ((total_KartikGupta/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_KartikGupta/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Kashish Goyal<div class="labels"><% if((total_KashishGoyal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_KashishGoyal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_KashishGoyal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Kavitash <div class="labels"><% if((total_Kavitash/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Kavitash/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Kavitash/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Khushal Garg<div class="labels"><% if((total_KhushalGarg/total_meetings)*100 > 75){ %><div class="green"><%= ((total_KhushalGarg/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_KhushalGarg/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Kritika Nanda<div class="labels"><% if((total_KritikaNanda/total_meetings)*100 > 75){ %><div class="green"><%= ((total_KritikaNanda/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_KritikaNanda/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Kuber Mehra<div class="labels"><% if((total_KuberMehra/total_meetings)*100 > 75){ %><div class="green"><%= ((total_KuberMehra/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_KuberMehra/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Kushal Sahni<div class="labels"><% if((total_KushalSahni/total_meetings)*100 > 75){ %><div class="green"><%= ((total_KushalSahni/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_KushalSahni/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Madhav Pande<div class="labels"><% if((total_MadhavPande/total_meetings)*100 > 75){ %><div class="green"><%= ((total_MadhavPande/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_MadhavPande/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Mahek Khowala<div class="labels"><% if((total_MahekKhowala/total_meetings)*100 > 75){ %><div class="green"><%= ((total_MahekKhowala/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_MahekKhowala/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Mahin Garg<div class="labels"><% if((total_MahinGarg/total_meetings)*100 > 75){ %><div class="green"><%= ((total_MahinGarg/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_MahinGarg/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Manan Munjal<div class="labels"><% if((total_MananMunjal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_MananMunjal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_MananMunjal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Manan Negi<div class="labels"><% if((total_MananNegi/total_meetings)*100 > 75){ %><div class="green"><%= ((total_MananNegi/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_MananNegi/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Mandeep Goyal<div class="labels"><% if((total_MandeepGoyal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_MandeepGoyal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_MandeepGoyal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Mayukh Sharma<div class="labels"><% if((total_MayukhSharma/total_meetings)*100 > 75){ %><div class="green"><%= ((total_MayukhSharma/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_MayukhSharma/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Mehak Sharma<div class="labels"><% if((total_MehakSharma/total_meetings)*100 > 75){ %><div class="green"><%= ((total_MehakSharma/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_MehakSharma/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Mukund Gupta<div class="labels"><% if((total_MukundGupta/total_meetings)*100 > 75){ %><div class="green"><%= ((total_MukundGupta/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_MukundGupta/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Nikheel Jain<div class="labels"><% if((total_NikheelJain/total_meetings)*100 > 75){ %><div class="green"><%= ((total_NikheelJain/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_NikheelJain/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Nikhil Singla<div class="labels"><% if((total_NikhilSingla/total_meetings)*100 > 75){ %><div class="green"><%= ((total_NikhilSingla/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_NikhilSingla/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Nikita <div class="labels"><% if((total_Nikita/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Nikita/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Nikita/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Nimish shangle<div class="labels"><% if((total_Nimishshangle/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Nimishshangle/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Nimishshangle/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Nishchay Jain<div class="labels"><% if((total_NishchayJain/total_meetings)*100 > 75){ %><div class="green"><%= ((total_NishchayJain/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_NishchayJain/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Oshita Singh<div class="labels"><% if((total_OshitaSingh/total_meetings)*100 > 75){ %><div class="green"><%= ((total_OshitaSingh/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_OshitaSingh/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Palak Bahl<div class="labels"><% if((total_PalakBahl/total_meetings)*100 > 75){ %><div class="green"><%= ((total_PalakBahl/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_PalakBahl/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Paras Maini<div class="labels"><% if((total_ParasMaini/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ParasMaini/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ParasMaini/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Payas Jain<div class="labels"><% if((total_PayasJain/total_meetings)*100 > 75){ %><div class="green"><%= ((total_PayasJain/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_PayasJain/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Prachi Mangewala<div class="labels"><% if((total_PrachiMangewala/total_meetings)*100 > 75){ %><div class="green"><%= ((total_PrachiMangewala/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_PrachiMangewala/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Prachi Singhroha<div class="labels"><% if((total_PrachiSinghroha/total_meetings)*100 > 75){ %><div class="green"><%= ((total_PrachiSinghroha/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_PrachiSinghroha/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Preetinder singh bajaj<div class="labels"><% if((total_Preetindersinghbajaj/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Preetindersinghbajaj/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Preetindersinghbajaj/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Pulkit kohli<div class="labels"><% if((total_Pulkitkohli/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Pulkitkohli/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Pulkitkohli/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Raghav goel<div class="labels"><% if((total_Raghavgoel/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Raghavgoel/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Raghavgoel/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Raghav Virmani<div class="labels"><% if((total_RaghavVirmani/total_meetings)*100 > 75){ %><div class="green"><%= ((total_RaghavVirmani/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_RaghavVirmani/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Rahul Mishra<div class="labels"><% if((total_RahulMishra/total_meetings)*100 > 75){ %><div class="green"><%= ((total_RahulMishra/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_RahulMishra/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">RAJBIR SINGH KAURA<div class="labels"><% if((total_RAJBIRSINGHKAURA/total_meetings)*100 > 75){ %><div class="green"><%= ((total_RAJBIRSINGHKAURA/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_RAJBIRSINGHKAURA/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Risham Arora<div class="labels"><% if((total_RishamArora/total_meetings)*100 > 75){ %><div class="green"><%= ((total_RishamArora/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_RishamArora/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Ritham <div class="labels"><% if((total_Ritham/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Ritham/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Ritham/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Rohit Upreti<div class="labels"><% if((total_RohitUpreti/total_meetings)*100 > 75){ %><div class="green"><%= ((total_RohitUpreti/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_RohitUpreti/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Ruhi Goyal<div class="labels"><% if((total_RuhiGoyal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_RuhiGoyal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_RuhiGoyal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Rushil Mittal<div class="labels"><% if((total_RushilMittal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_RushilMittal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_RushilMittal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Saatvik garg<div class="labels"><% if((total_Saatvikgarg/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Saatvikgarg/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Saatvikgarg/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Sahil <div class="labels"><% if((total_Sahil/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Sahil/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Sahil/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Saloni Bali<div class="labels"><% if((total_SaloniBali/total_meetings)*100 > 75){ %><div class="green"><%= ((total_SaloniBali/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_SaloniBali/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Sanchit Goyal<div class="labels"><% if((total_SanchitGoyal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_SanchitGoyal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_SanchitGoyal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Sankalp Sharma<div class="labels"><% if((total_SankalpSharma/total_meetings)*100 > 75){ %><div class="green"><%= ((total_SankalpSharma/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_SankalpSharma/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Shantanu Dev<div class="labels"><% if((total_ShantanuDev/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ShantanuDev/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ShantanuDev/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Shivani Sharma<div class="labels"><% if((total_ShivaniSharma/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ShivaniSharma/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ShivaniSharma/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Shourya Gupta<div class="labels"><% if((total_ShouryaGupta/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ShouryaGupta/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ShouryaGupta/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Shrey Gupta<div class="labels"><% if((total_ShreyGupta/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ShreyGupta/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ShreyGupta/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Shreya Gupta<div class="labels"><% if((total_ShreyaGupta/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ShreyaGupta/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ShreyaGupta/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Shreyas Dubey<div class="labels"><% if((total_ShreyasDubey/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ShreyasDubey/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ShreyasDubey/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Shruti <div class="labels"><% if((total_Shruti/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Shruti/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Shruti/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Shruti Singh<div class="labels"><% if((total_ShrutiSingh/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ShrutiSingh/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ShrutiSingh/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Shubham khanna<div class="labels"><% if((total_Shubhamkhanna/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Shubhamkhanna/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Shubhamkhanna/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Shubham Sahni<div class="labels"><% if((total_ShubhamSahni/total_meetings)*100 > 75){ %><div class="green"><%= ((total_ShubhamSahni/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_ShubhamSahni/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Siddhant Jain<div class="labels"><% if((total_SiddhantJain/total_meetings)*100 > 75){ %><div class="green"><%= ((total_SiddhantJain/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_SiddhantJain/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Simranjeet Kaur<div class="labels"><% if((total_SimranjeetKaur/total_meetings)*100 > 75){ %><div class="green"><%= ((total_SimranjeetKaur/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_SimranjeetKaur/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Soomo Jyoti banerjee<div class="labels"><% if((total_SoomoJyotibanerjee/total_meetings)*100 > 75){ %><div class="green"><%= ((total_SoomoJyotibanerjee/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_SoomoJyotibanerjee/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Sparsh gulati<div class="labels"><% if((total_Sparshgulati/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Sparshgulati/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Sparshgulati/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Tanmay Chakravorty<div class="labels"><% if((total_TanmayChakravorty/total_meetings)*100 > 75){ %><div class="green"><%= ((total_TanmayChakravorty/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_TanmayChakravorty/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Tarandeep kour<div class="labels"><% if((total_Tarandeepkour/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Tarandeepkour/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Tarandeepkour/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Tushar goyal<div class="labels"><% if((total_Tushargoyal/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Tushargoyal/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Tushargoyal/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Twinkle <div class="labels"><% if((total_Twinkle/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Twinkle/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Twinkle/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Udbhav Somani<div class="labels"><% if((total_UdbhavSomani/total_meetings)*100 > 75){ %><div class="green"><%= ((total_UdbhavSomani/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_UdbhavSomani/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Vaishnav gautam<div class="labels"><% if((total_Vaishnavgautam/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Vaishnavgautam/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Vaishnavgautam/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Vasundhra Datt<div class="labels"><% if((total_VasundhraDatt/total_meetings)*100 > 75){ %><div class="green"><%= ((total_VasundhraDatt/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_VasundhraDatt/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Vatsal soni<div class="labels"><% if((total_Vatsalsoni/total_meetings)*100 > 75){ %><div class="green"><%= ((total_Vatsalsoni/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_Vatsalsoni/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Vineet Upadhyay<div class="labels"><% if((total_VineetUpadhyay/total_meetings)*100 > 75){ %><div class="green"><%= ((total_VineetUpadhyay/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_VineetUpadhyay/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Yash Dhawan<div class="labels"><% if((total_YashDhawan/total_meetings)*100 > 75){ %><div class="green"><%= ((total_YashDhawan/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_YashDhawan/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Yash Kapur<div class="labels"><% if((total_YashKapur/total_meetings)*100 > 75){ %><div class="green"><%= ((total_YashKapur/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_YashKapur/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Yashi Mishra<div class="labels"><% if((total_YashiMishra/total_meetings)*100 > 75){ %><div class="green"><%= ((total_YashiMishra/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_YashiMishra/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+<li class="member">Yuvraj Singh<div class="labels"><% if((total_YuvrajSingh/total_meetings)*100 > 75){ %><div class="green"><%= ((total_YuvrajSingh/total_meetings)*100).toFixed(2) %><%}else{%><div class="red"><%= ((total_YuvrajSingh/total_meetings)*100).toFixed(2) %></div><% } %> </div></li>
+</ol>
+      <div class="buttons">
+        <a href="/" class=" bt btn btn-dark   btn-rounded"><span>Submit New Attendance</span></a>
+        <a href="/edit" class="bt btn btn-danger  btn-rounded"><span>Edit Attendance</span></a>    
+      </div>
+      
+    </div>
+    
+    
+    
+  </body>
+</html>
